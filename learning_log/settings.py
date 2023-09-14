@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-2l!4uq)50o51t=bzhvfo&efr=gtnr%-akizuj86mnsske1xukl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -85,25 +85,24 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Rende postgressSQL live
 
-"""
 import dj_database_url
 
 DATABASES = {
     
-    'default':dj_database_url.parse(env('DATABASE_URL'))
+    'default':dj_database_url.parse(env('postgres://productiondatabase_38pg_user:O9Yf6tNvy78484mC5EDIo5swRzQKrIbr@dpg-ck1gh1mru70s73dhb7fg-a.singapore-postgres.render.com/productiondatabase_38pg'))
 }
 
-"""
+
 
 
 

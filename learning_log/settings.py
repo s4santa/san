@@ -99,11 +99,8 @@ import dj_database_url
 
 DATABASES = {
     
-    'default':dj_database_url.parse(env('postgres://productiondatabase_38pg_user:O9Yf6tNvy78484mC5EDIo5swRzQKrIbr@dpg-ck1gh1mru70s73dhb7fg-a.singapore-postgres.render.com/productiondatabase_38pg'))
+    'default':dj_database_url.parse('postgres://productiondatabase_38pg_user:O9Yf6tNvy78484mC5EDIo5swRzQKrIbr@dpg-ck1gh1mru70s73dhb7fg-a.singapore-postgres.render.com/productiondatabase_38pg')
 }
-
-
-
 
 
 
